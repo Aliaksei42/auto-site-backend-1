@@ -1,7 +1,8 @@
+require('dotenv').config();
 const mongoose = require('mongoose');
 const Post = require('./models/post'); 
 
-const URL = 'mongodb+srv://alex:Passs321@cluster0.tq2r9lo.mongodb.net/autoSite?retryWrites=true&w=majority';
+const URL = 'MONGODB_URL';
 
 mongoose.connect(URL, {
   useNewUrlParser: true,
