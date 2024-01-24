@@ -20,16 +20,16 @@ const URL = process.env.MONGODB_URL;
 //   credentials: true,
 // }
 
-const corsOptions = {
-  origin: 'https://auto-site-frontend-git-master-alexivko01-gmailcom.vercel.app/',
-  optionsSuccessStatus: 200,
-  credentials: true,
-}
+// const corsOptions = {
+//   origin: 'https://auto-site-frontend-git-master-alexivko01-gmailcom.vercel.app/',
+//   optionsSuccessStatus: 200,
+//   credentials: true,
+// }
 
-app.use(cors(corsOptions));
+// app.use(cors(corsOptions));
 
-// const app = express()
-// app.use(cors())
+const app = express()
+app.use(cors())
 
 app.use(express.json())
 app.use(postRoutes)
